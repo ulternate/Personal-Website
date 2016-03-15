@@ -1,0 +1,110 @@
+body.pushable {
+  background-color: #e8e8e8 !important; }
+
+.vertical-padding {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+
+.vertical-padding-double {
+  margin-top: 6em;
+  margin-bottom: 6em; }
+
+.vertical-padding-top {
+  margin-top: 3em;
+  padding-top: 3em; }
+
+.hidden.menu {
+  display: none; }
+
+.ui.sticky.hidden {
+  visibility: hidden; }
+
+.masthead {
+  background-image: url("/static/img/header.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important; }
+
+.masthead.segment {
+  min-height: 600px;
+  padding: 1em 0em; }
+
+.masthead .logo.item img {
+  margin-right: 1em; }
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em; }
+.masthead h1.ui.header {
+  margin-top: 3em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal; }
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal; }
+
+.internal.rail {
+  width: 5% !important; }
+
+.ui.vertical.stripe {
+  padding: 6em 0em; }
+
+.ui.half-vertical.stripe {
+  padding: 3em 0em; }
+
+.ui.vertical.stripe h3,
+.ui.half-vertical.stripe h3 {
+  font-size: 1.8em; }
+
+.ui.vertical.stripe .button + h3,
+.ui.half-vertical.stripe + h3,
+.ui.vertical.stripe p + h3,
+.ui.half-vertical.stripe p + h3 {
+  margin-top: 3em; }
+
+.ui.vertical.stripe .floated.image,
+.ui.half-vertical.stripe .floated.image {
+  clear: both; }
+
+.ui.vertical.stripe p,
+.ui.half-vertical.stripe p {
+  font-size: 1.33em; }
+
+.ui.vertical.stripe .horizontal.divider,
+.ui.half-vertical.stripe .horizontal.divider {
+  margin: 3em 0em; }
+
+.small-text {
+  font-size: 0.7em; }
+
+.floated-right {
+  float: right; }
+
+.footer.segment {
+  padding: 5em 0em; }
+
+.secondary.pointing.menu .toc.item {
+  display: none; }
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important; }
+
+  .secondary.pointing.menu.hideable .item,
+  .secondary.pointing.menu.hideable .menu {
+    display: none; }
+
+  .secondary.pointing.menu .toc.item {
+    display: block; }
+
+  .masthead.segment {
+    min-height: 350px; }
+
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em; }
+
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em; } }
+
+/*# sourceMappingURL=master.css.map */

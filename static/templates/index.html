@@ -8,8 +8,11 @@
 
 		<title>Portfolio of Daniel C Swain - Freelance Developer</title>
 		<meta name="keywords" content="Daniel Swain, Daniel, Swain, Daniel C Swain, programmer, freelance, freelancer, programming, developer, Loyalist, Android, Ruby, Django, www.KFL.com.au, www.StevenCJones.com.au, WSP, Parsons Brinckerhoff, projects, application, applications, app">
+
 		<meta name="description" content="Daniel Swain is a freelance developer based in Western Australia. Currently enamored with Ruby and Rails, he's released Android and Enterprise applications and also built various responsive websites using Django.">
+		
 		<meta name="author" content="Daniel Swain">
+		
 		<link rel="shortcut icon" type="image/png" href="http://danielcswain.s3.amazonaws.com/images/favicon.png"/>
 		
 		<!-- Stylesheets -->
@@ -18,22 +21,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="pushable" >
-
-		<!-- Following Menu -->
-		<div class="ui inverted pointing top fixed hidden main menu" id="#top-menu">
-			<div class="ui container">
-				<a class="item" href="#">Home</a>
-				<a class="active item" href="#Projects">Projects</a>
-				<a class="item" href="#Contact">Contact</a>
-			</div>
-		</div> <!-- End Following Menu -->
-
-		<!-- Sidebar Menu -->
-		<div class="ui vertical inverted sidebar menu">
-			<a class="item" href="#">Home</a>
-			<a class="item" href="#Projects">Projects</a>
-			<a class="item" href="#Contact">Contact</a>
-		</div> <!-- End Sidebar Menu -->
 
 		<!-- Main Page Contents, placed in a pusher so the sidebar moves it all to one side -->
 		<div class="pusher">
@@ -506,7 +493,6 @@
 																</div>
 															</h3>
 														</div>
-<<<<<<< HEAD
 														<div class="vertical-padding">
 															<div class="row">
 																<h3 class="ui header">
@@ -541,37 +527,6 @@
 								<h1 class="ui huge header centered row">
 									<span class="middle aligned"><i class="fa fa-inbox"></i> Contact</span>
 								</h1>
-=======
-													</div>
-												</div> <!-- End Qoutes Block -->
-											</div>
-										</div> <!-- End Description Block -->
-									</div><!-- End First Enterprise App -->
-								</div> <!-- End Enterprise Tab Container -->
-							</div> <!-- End Enterprise Tab -->
-						</div> <!-- End Tabs -->
-					</div>	
-				</div> <!-- End Portfolio Section -->	
-			</section>
-						
-			<section id="Contact">
-				<!-- Divider -->
-				<div class="row ui divider"></div>
-        
-				<!-- Contact section -->
-				<div class="ui vertical-padding-top">
-					<div class="vertical-padding">
-						<div class="ui middle aligned stackable grid container">
-							<h1 class="ui huge header centered row">
-								<span class="middle aligned"><i class="fa fa-inbox"></i> Contact</span>
-							</h1>
-						</div>
-					</div>
-					<div class="vertical-padding">
-						<div class="ui middle aligned stackable grid container">
-							<div class="ui centered four wide column">
-								<img src="/static/img/hero_image.png" alt="Daniel Swain" class="ui centered medium circular image">
->>>>>>> 1718111a0a76abedb364d4dee9f9fa410338a320
 							</div>
 						</div>
 						<div class="vertical-padding">
@@ -640,6 +595,24 @@
 			</div>
 		</div>
 		
+		<!-- Hidden Menu's and Modals that don't need to be rendered straight away. -->
+
+		<!-- Following Menu -->
+		<div class="ui inverted pointing top fixed hidden main menu" id="#top-menu">
+			<div class="ui container">
+				<a class="item" href="#">Home</a>
+				<a class="active item" href="#Projects">Projects</a>
+				<a class="item" href="#Contact">Contact</a>
+			</div>
+		</div> <!-- End Following Menu -->
+
+		<!-- Sidebar Menu -->
+		<div class="ui vertical inverted sidebar menu">
+			<a class="item" href="#">Home</a>
+			<a class="item" href="#Projects">Projects</a>
+			<a class="item" href="#Contact">Contact</a>
+		</div> <!-- End Sidebar Menu -->
+
 		<!-- Start Ruby Modals -->
 		<div id="modals-ruby">
 			<!-- Ruby Modal 1 -->
@@ -1157,15 +1130,12 @@
 						}
 					}
 				);
-
 				// create sidebar and attach to menu open
 				$('.ui.sidebar').sidebar('attach events', '.toc.item');
 				// handle event when the sidebar menu items are clicked, hide the sidebar.
 				$('.ui.sidebar').sidebar('attach events', '.sidebar.menu .item');
-
 				// Handle tabbed menu clicks
 				$('.tabular.menu .item').tab();
-
 				// To Top Button
 				$('.ui.sticky')
 					.sticky({
@@ -1173,14 +1143,12 @@
 						context: '#main-content'
 					}
 				);
-
 				// Variables for Menu state changes on scroll/clicks
 				var my_sections = $('section'),
 					my_floating_navs = $('.fixed.menu .item'),
 					my_main_navs = $('.hideable.menu .item'),
 					floating_nav_height = my_floating_navs.outerHeight(),
 					masthead_height = $('.masthead').outerHeight();
-
 				// Handle menu clicks, changing the active state on the floating and main menu's
 				$('.main.menu .item').click(function(){
 					var clicked_href = $(this).attr('href');
@@ -1195,7 +1163,6 @@
 						}
 					});
 				});
-
 				// Change floating menu active state when scrolled into the appropriate section.
 				$(window).on('scroll', function() {
 					var cur_pos = $(this).scrollTop();
@@ -1232,7 +1199,6 @@
 						}
 					});
 				});
-
 				// Only allow modals on computers i.e. if the userAgent is one of the following then don't bind our modal actions.
 				if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
 					// Handle modal actions
@@ -1241,7 +1207,6 @@
 						// this parameter will enable/disable the closing for the previous .united modals when the next will be opened :)
 						allowMultiple: false,
 					});
-
 					// Set actions for all modal buttons
 					for (var i = 1; i < 4; i++) {
 						// Helper variables
@@ -1255,67 +1220,54 @@
 							call_django = '#call-django-modal-',
 							call_django2 = '#call-django2-modal-',
 							call_enterprise = '#call-enterprise-modal-';
-
 						// Initial Calls for all the modals and modal close icons
 						$(android + i).modal('attach events', call_android + i );
 						$(ruby + i).modal('attach events', call_ruby + i );
 						$(django + i).modal('attach events', call_django + i );
 						$(django2 + i).modal('attach events', call_django2 + i );
 						$(enterprise + i).modal('attach events', call_enterprise + i );
-
 						$(android + i).modal('attach events', android + i + '-close', 'hide all');
 						$(ruby + i).modal('attach events', ruby + i + '-close', 'hide all');
 						$(django + i).modal('attach events', django + i + '-close', 'hide all');
 						$(django2 + i).modal('attach events', django2 + i + '-close', 'hide all');
 						$(enterprise + i).modal('attach events', enterprise + i + '-close', 'hide all');
-
 						// Clicks between modals and modal close buttons for modals 1 and 3
 						if (i == 1){
 							$(android + i).modal('attach events', android + (i + 1) + '-btn-to-' + i);
 							$(android + i).modal('attach events', android + i + '-btn-close', 'hide all');
-
 							$(ruby + i).modal('attach events', ruby + (i + 1) + '-btn-to-' + i);
 							$(ruby + i).modal('attach events', ruby + i + '-btn-close', 'hide all');
-
 							$(django + i).modal('attach events', django + (i + 1) + '-btn-to-' + i);
 							$(django + i).modal('attach events', django + i + '-btn-close', 'hide all');
 							$(django2 + i).modal('attach events', django2 + (i + 1) + '-btn-to-' + i);
 							$(django2 + i).modal('attach events', django2 + i + '-btn-close', 'hide all');
-
 							$(enterprise + i).modal('attach events', enterprise + (i + 1) + '-btn-to-' + i);
 							$(enterprise + i).modal('attach events', enterprise + i + '-btn-close', 'hide all');
 						} else if (i == 2){
 							$(android + i).modal('attach events', android + (i - 1) + '-btn-to-' + i);
 							$(android + i).modal('attach events', android + (i + 1) + '-btn-to-' + i);
-
 							$(ruby + i).modal('attach events', ruby + (i - 1) + '-btn-to-' + i);
 							$(ruby + i).modal('attach events', ruby + (i + 1) + '-btn-to-' + i);
-
 							$(django + i).modal('attach events', django + (i - 1) + '-btn-to-' + i);
 							$(django + i).modal('attach events', django + (i + 1) + '-btn-to-' + i);
 							$(django2 + i).modal('attach events', django2 + (i - 1) + '-btn-to-' + i);
 							$(django2 + i).modal('attach events', django2 + (i + 1) + '-btn-to-' + i);
-
 							$(enterprise + i).modal('attach events', enterprise + (i - 1) + '-btn-to-' + i);
 							$(enterprise + i).modal('attach events', enterprise + (i + 1) + '-btn-to-' + i);
 						} else if (i == 3){
 							$(android + i).modal('attach events', android + (i - 1) + '-btn-to-' + i);
 							$(android + i).modal('attach events', android + i + '-btn-close', 'hide all');
-
 							$(ruby + i).modal('attach events', ruby + (i - 1) + '-btn-to-' + i);
 							$(ruby + i).modal('attach events', ruby + i + '-btn-close', 'hide all');
-
 							$(django + i).modal('attach events', django + (i - 1) + '-btn-to-' + i);
 							$(django + i).modal('attach events', django + i + '-btn-close', 'hide all');
 							$(django2 + i).modal('attach events', django2 + (i - 1) + '-btn-to-' + i);
 							$(django2 + i).modal('attach events', django2 + i + '-btn-close', 'hide all');
-
 							$(enterprise + i).modal('attach events', enterprise + (i - 1) + '-btn-to-' + i);
 							$(enterprise + i).modal('attach events', enterprise + i + '-btn-close', 'hide all');
 						}
 					}
 				}
-
 				
 			});
 		</script>

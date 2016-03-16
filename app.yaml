@@ -4,6 +4,8 @@ runtime: python27
 api_version: 1
 threadsafe: yes
 
+default_expiration: "14d"
+
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
@@ -20,6 +22,7 @@ handlers:
 # Static Img files.
 - url: /static/img
   static_dir: static/img
+  expiration: "90d"
 
 - url: /sitemap.xml
   static_files: sitemap.xml

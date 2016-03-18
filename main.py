@@ -24,6 +24,11 @@ class MainPage(BaseHandler):
   	
     def get(self):
       	self.write_template(TEMPLATE_ROOT_PATH + 'index.html', None)
-        
-application = webapp2.WSGIApplication([('/', MainPage)], debug=False)
+
+# Currently 301 redirecting the old site structure to the main page as these old links are still showing in Google Search Results.
+application = webapp2.WSGIApplication([webapp2.Route('/contact', webapp2.RedirectHandler, defaults={'_uri':'http://www.danielcswain.com'}),
+                                       webapp2.Route('/resume', webapp2.RedirectHandler, defaults={'_uri':'http://www.danielcswain.com'}),
+                                       webapp2.Route('/photos', webapp2.RedirectHandler, defaults={'_uri':'http://www.danielcswain.com'}),
+                                       webapp2.Route('/projects', webapp2.RedirectHandler, defaults={'_uri':'http://www.danielcswain.com'}),
+                                       ('/', MainPage)], debug=False)
 
